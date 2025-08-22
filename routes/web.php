@@ -8,6 +8,7 @@ use App\Livewire\Auth\Passwords\Email;
 use App\Livewire\Auth\Passwords\Reset;
 use App\Livewire\Auth\Register;
 use App\Livewire\Auth\Verify;
+use App\Livewire\Notes\NotesList;
 use Illuminate\Support\Facades\Route;
 use PHPUnit\Framework\MockObject\Rule\InvocationOrder;
 
@@ -45,6 +46,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('password/confirm', Confirm::class)
         ->name('password.confirm');
+
+    // Notes Routes
+    Route::get('notes', NotesList::class)->name('notes.index');
 });
 
 Route::middleware('auth')->group(function () {

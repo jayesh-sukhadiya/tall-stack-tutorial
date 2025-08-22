@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Auth\Events\Registered;
 use Livewire\Component;
+use Livewire\Attributes\Layout;
 
+#[Layout('layouts.auth')]
 class Register extends Component
 {
     /** @var string */
@@ -46,6 +48,6 @@ class Register extends Component
 
     public function render()
     {
-        return view('livewire.auth.register')->extends('layouts.auth');
+        return view('livewire.auth.register');
     }
 }

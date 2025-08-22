@@ -4,12 +4,14 @@ namespace App\Livewire\Auth\Passwords;
 
 use App\Providers\RouteServiceProvider;
 use Livewire\Component;
+use Livewire\Attributes\Layout;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Auth\Events\PasswordReset;
 
+#[Layout('layouts.auth')]
 class Reset extends Component
 {
     /** @var string */
@@ -88,6 +90,6 @@ class Reset extends Component
 
     public function render()
     {
-        return view('livewire.auth.passwords.reset')->extends('layouts.auth');
+        return view('livewire.auth.passwords.reset');
     }
 }

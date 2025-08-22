@@ -3,7 +3,9 @@
 namespace App\Livewire\Auth\Passwords;
 
 use Livewire\Component;
+use Livewire\Attributes\Layout;
 
+#[Layout('layouts.auth')]
 class Confirm extends Component
 {
     /** @var string */
@@ -22,6 +24,6 @@ class Confirm extends Component
 
     public function render()
     {
-        return view('livewire.auth.passwords.confirm')->extends('layouts.auth');
+        return view('livewire.auth.passwords.confirm');
     }
 }

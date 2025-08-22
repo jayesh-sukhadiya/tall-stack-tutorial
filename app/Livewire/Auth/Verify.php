@@ -5,7 +5,9 @@ namespace App\Livewire\Auth;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
+use Livewire\Attributes\Layout;
 
+#[Layout('layouts.auth')]
 class Verify extends Component
 {
     public function resend()
@@ -23,6 +25,6 @@ class Verify extends Component
 
     public function render()
     {
-        return view('livewire.auth.verify')->extends('layouts.auth');
+        return view('livewire.auth.verify');
     }
 }

@@ -34,11 +34,11 @@ This tutorial project includes:
 
 Before you begin, ensure you have the following installed:
 
-- **PHP** >= 8.1
+- **PHP** >= 8.2
 - **Composer** >= 2.0
-- **Node.js** >= 16.0
-- **npm** >= 8.0
-- **Laravel** >= 10.0
+- **Node.js** >= 20.0
+- **npm** >= 11.0
+- **Laravel** >= 12.0
 
 ## 🛠️ Installation
 
@@ -129,7 +129,7 @@ tall-stack-tutorial/
 - **Vite** - Fast build tool and dev server
 
 ### Backend
-- **Laravel v10** - PHP web framework
+- **Laravel v12** - PHP web framework
 - **Livewire v3** - Full-stack framework for Laravel
 - **MySQL/PostgreSQL** - Database
 
